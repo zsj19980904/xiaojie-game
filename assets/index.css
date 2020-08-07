@@ -1,0 +1,108 @@
+#game{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../images/sky.png);
+}
+.bird{
+width: 30px;
+height: 30px;
+position: absolute;
+top:50%;
+left: 50%;
+margin-left: -15px;
+margin-top: -15px;
+background: url(../images/birds.png);
+}
+.start{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    width: 200px;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%,-50%);
+}
+.start-white{
+    font-size: 24px;
+    color:#fff;
+}
+.start-blue{
+    font-size:36px;
+    color:blue;
+}
+.score{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight:bold;
+}
+.mask{
+/* 因为由于此此盒子没有宽度和高度，为了实习这个定位，
+就会铺满整个父元素 */
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background:rgba(0,0,0,.7);
+}
+.end{
+    top: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:2;
+    text-align: center;
+}
+.end .over{
+    font-weight: bold;
+    color: red;
+    font-size: 35px;
+}
+.end .result,.end .final-score{
+    margin-top: 20px;
+    color: yellow;
+    font-size: 20px;
+    font-weight:bold ;
+}
+.end .rank-list{
+    margin-top: 20px;
+    color: blue;
+    text-align:left;
+}
+.end .rank-item{
+height: 30px;
+margin-bottom: 10px;
+line-height: 30px;
+padding: 0 10px;
+font-size: 13px;
+}
+.end .rank-degre{
+    color: #fff;
+    text-align: center;
+    /* inline-block有继承性，因此我们应该在改元素内使用
+    该元素
+    */
+    display:inline-block;
+    line-height: 14px;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    font-size: 14px;
+    background: #8eb9f5;
+}
+.end .rank-score{
+display: inline-block;
+width: 30px;
+}
+.end .restart{
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
