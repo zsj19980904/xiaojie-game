@@ -8,15 +8,15 @@
 width: 30px;
 height: 30px;
 position: absolute;
-top:50%;
+top:235PX;
 left: 50%;
 margin-left: -15px;
-margin-top: -15px;
 background: url(../images/birds.png);
+transition:top .3s ease;
 }
 .start{
     position: absolute;
-    top:60%;
+    top:55%;
     left: 50%;
     width: 200px;
     font-weight: bold;
@@ -24,6 +24,7 @@ background: url(../images/birds.png);
     text-align: center;
     line-height: 60px;
     transform: translate(-50%,-50%);
+    transition: all .3s linear;
 }
 .start-white{
     font-size: 24px;
@@ -40,6 +41,7 @@ background: url(../images/birds.png);
     color: #fff;
     font-size: 24px;
     font-weight:bold;
+    display: none;
 }
 .mask{
 /* 因为由于此此盒子没有宽度和高度，为了实习这个定位，
@@ -50,6 +52,7 @@ left: 0;
 right: 0;
 bottom: 0;
 background:rgba(0,0,0,.7);
+display: none;
 }
 .end{
     top: 70px;
